@@ -99,9 +99,9 @@ function checkGuess() {
     if (letterColor[i] == "green") continue;
 
     for (let j = 0; j < 5; j++) {
-      if (rightGuess[i] == currentGuess[i]) {
+      if (rightGuess[j] == currentGuess[i]) {
         letterColor[i] = "yellow";
-        rightGuess[i] = "#";
+        rightGuess[j] = "#";
       }
     }
   }
@@ -164,7 +164,7 @@ document.addEventListener("keyup", (e) => {
     return;
   }
 
-  let found = pressedKey.match(/[a-z]/gi);
+  let found = pressedKey.match(/[a-z]/g);
   if (!found || found.length > 1) {
     return;
   } else {
