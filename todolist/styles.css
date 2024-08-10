@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  background-color: blanchedalmond;
+  justify-content: center;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.main {
+  background-color: pink;
+  width: 300px;
+  padding: 30px;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.textbox {
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.text {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+}
+
+.addBtn {
+  background-color: green;
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.task {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task li {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.task label {
+  flex-grow: 1;
+}
+
+.checkbox {
+  margin-right: 15px;
+}
+
+.trashCan {
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.trashCan:hover {
+  opacity: 1;
+}
